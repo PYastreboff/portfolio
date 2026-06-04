@@ -1174,14 +1174,14 @@ body.site-brand--project .case-item__caption {
     flex: none;
     display: flex;
     flex-direction: column;
-    top: var(--brand-header-h);
+    top: calc(var(--brand-header-h) - 1px);
     left: 0;
     right: 0;
     width: 100%;
     max-width: 100%;
     margin: 0;
-    height: calc(100dvh - var(--brand-header-h));
-    height: calc(100vh - var(--brand-header-h));
+    height: calc(100dvh - var(--brand-header-h) + 1px);
+    height: calc(100vh - var(--brand-header-h) + 1px);
     z-index: 301;
     background: #fff;
     padding: 0;
@@ -1193,6 +1193,10 @@ body.site-brand--project .case-item__caption {
     visibility: hidden;
     pointer-events: none;
     transition: opacity 0.2s ease, visibility 0.2s ease;
+  }
+
+  body.menu-open .site-header {
+    border-bottom-color: transparent;
   }
 
   .site-nav-wrap.is-open {
