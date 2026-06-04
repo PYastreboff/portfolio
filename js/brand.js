@@ -80,27 +80,43 @@
     });
   }
 
-  function setInViewRegion(activeRegion) {
-    document.querySelectorAll('[data-nav]').forEach(function (region) {
-      region.classList.toggle('is-inview', region === activeRegion);
-    });
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
   }
 
+  function resetToTop() {
+    window.scrollTo(0, 0);
+    if (location.hash) {
+      history.replaceState(null, '', location.pathname + location.search);
+    }
+    setActiveNav('#top');
+  }
+
+  resetToTop();
+  window.addEventListener('pageshow', function (e) {
+    if (e.persisted) resetToTop();
+  });
+
   var scrollSpyRegions = document.querySelectorAll('[data-nav]');
-  var headerOffset = 72;
   var scrollScheduled = false;
+
+  function getScrollOffset() {
+    var header = document.querySelector('.site-header');
+    var headerH = header ? header.offsetHeight : 56;
+    var extra = parseFloat(getComputedStyle(document.documentElement).fontSize) * 2;
+    return headerH + extra;
+  }
 
   function updateScrollSpy() {
     if (!scrollSpyRegions.length) return;
 
+    var headerOffset = getScrollOffset();
     var scrollLine = window.scrollY + headerOffset;
-    var activeRegion = scrollSpyRegions[0];
-    var activeHash = activeRegion.getAttribute('data-nav');
+    var activeHash = scrollSpyRegions[0].getAttribute('data-nav');
 
     scrollSpyRegions.forEach(function (region) {
       var top = region.getBoundingClientRect().top + window.scrollY;
       if (top <= scrollLine + 1) {
-        activeRegion = region;
         activeHash = region.getAttribute('data-nav');
       }
     });
@@ -108,13 +124,11 @@
     if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
       var contact = document.getElementById('contact');
       if (contact) {
-        activeRegion = contact;
         activeHash = '#contact';
       }
     }
 
     setActiveNav(activeHash);
-    setInViewRegion(activeRegion);
   }
 
   function onScrollSpy() {
@@ -130,9 +144,6 @@
     window.addEventListener('scroll', onScrollSpy, { passive: true });
     window.addEventListener('resize', onScrollSpy);
     updateScrollSpy();
-    if (location.hash) {
-      window.setTimeout(updateScrollSpy, 150);
-    }
   }
 
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
@@ -144,8 +155,7 @@
       e.preventDefault();
       closeMenu();
       setActiveNav(id);
-      var offset = window.innerWidth <= 768 ? 64 : 72;
-      var top = target.getBoundingClientRect().top + window.scrollY - offset;
+      var top = target.getBoundingClientRect().top + window.scrollY - getScrollOffset();
       window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
       if (history.replaceState) {
         history.replaceState(null, '', id);

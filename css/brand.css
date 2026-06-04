@@ -1,5 +1,5 @@
 /* Peter Yastreboff — minimal portfolio (Luca-inspired) */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Crimson+Pro:wght@400;600;700&display=swap");
 
 :root {
   --brand-royal: #2563eb;
@@ -13,9 +13,12 @@
   --brand-text-muted: #64748b;
   --brand-text-soft: #475569;
   --brand-font: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --brand-font-serif: "Crimson Pro", Georgia, "Times New Roman", serif;
   --brand-max: 720px;
   --brand-side: 1.5rem;
   --brand-header-h: 56px;
+  --brand-scroll-extra: 2rem;
+  --brand-scroll-offset: calc(var(--brand-header-h) + var(--brand-scroll-extra));
   --brand-gap: 1rem;
   --brand-transition: 0.15s ease;
   --section-y: clamp(3.5rem, 8vw, 5.5rem);
@@ -219,13 +222,8 @@ body.site-brand .sun2 {
   min-width: 0;
 }
 
-.hero.is-inview .hero__title,
-.section.is-inview > .section__head .section__title {
-  color: var(--brand-royal);
-}
-
 .section__head .section__title {
-  transition: color var(--brand-transition);
+  color: var(--brand-text);
 }
 
 /* Main */
@@ -276,7 +274,7 @@ body.site-brand .sun2 {
 .section,
 .section-band,
 #top {
-  scroll-margin-top: calc(var(--brand-header-h) + 0.75rem);
+  scroll-margin-top: var(--brand-scroll-offset);
 }
 
 /* Hero */
@@ -546,9 +544,10 @@ body.site-brand .sun2 {
 
 .section__title {
   margin: 0 0 0.625rem;
-  font-size: clamp(1.75rem, 4.5vw, 2.25rem);
+  font-family: var(--brand-font-serif);
+  font-size: clamp(2rem, 4vw, 2.75rem);
   font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
   line-height: 1.15;
   color: var(--brand-text);
 }
@@ -652,10 +651,6 @@ body.site-brand .sun2 {
   transition: box-shadow var(--brand-transition), transform var(--brand-transition), border-color var(--brand-transition);
   min-width: 0;
   max-width: 100%;
-}
-
-.entry-card.is-inview {
-  border-color: #bfdbfe;
 }
 
 .entry-card:hover {
