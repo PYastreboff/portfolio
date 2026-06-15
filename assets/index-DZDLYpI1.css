@@ -14206,13 +14206,9 @@ a i:hover {
   }
 }
 
-/* Portfolio page spacing */
-.portfolio-box {
-  padding-bottom: 1.875rem;
-}
-
+/* Portfolio page spacing — box-outer already provides inner padding */
 .portfolio-box .gallery-grid {
-  padding-bottom: 2.5rem;
+  padding-bottom: 0;
 }
 
 @media only screen and (max-width: 991px) {
@@ -14221,21 +14217,9 @@ a i:hover {
     padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--color-border);
   }
-
-  .portfolio-box .gallery-grid {
-    padding-bottom: 2rem;
-  }
 }
 
 @media only screen and (max-width: 580px) {
-  .portfolio-box {
-    padding-bottom: 1.25rem;
-  }
-
-  .portfolio-box .gallery-grid {
-    padding-bottom: 2.25rem;
-  }
-
   .portfolio-toolbar {
     margin-bottom: 1.5rem;
     padding-bottom: 1.25rem;
