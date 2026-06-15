@@ -30,13 +30,6 @@
  - Other
  
 ------------------------------------------------ */
-@import url("./css/swiper.min.css");
-@import url("./css/simplebar.min.css");
-@import url("./css/magnific-popup.css");
-@import url("./css/photoswipe.css");
-@import url("./css/default-skin.css");
-@import url("./css/style-custome-icons.css");
-@import url("./css/feather.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 :root {
   --font-family: 'Poppins', sans-serif;
@@ -1142,11 +1135,13 @@ button:focus {
   background: var(--color-gradient-icon);
 }
 
-.icon-box .font-icon {
+.icon-box .font-icon,
+.icon-box > i[class*='fa-'] {
   background: var(--color-gradient-text);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 @media only screen and (max-width: 580px) {

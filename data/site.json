@@ -1,0 +1,29 @@
+{
+  "name": "Peter Yastreboff",
+  "role": "Software Engineer",
+  "avatar": "/img/memoji.png",
+  "avatarAlt": "Peter Y",
+  "email": "pyas01@icloud.com",
+  "location": {
+    "label": "Sydney, Australia",
+    "url": "https://maps.app.goo.gl/2tGCYm4b4GxyCUi77"
+  },
+  "github": {
+    "username": "PYastreboff",
+    "url": "https://github.com/PYastreboff/"
+  },
+  "social": [
+    {
+      "url": "https://x.com/PeterY03800587",
+      "icon": "fa-brands fa-x-twitter"
+    },
+    {
+      "url": "https://www.linkedin.com/in/peter-yastreboff-6a9664313/",
+      "icon": "fa-brands fa-linkedin"
+    },
+    {
+      "url": "https://www.hackerrank.com/profile/Peter_Y",
+      "icon": "fa-brands fa-hackerrank"
+    }
+  ]
+}
