@@ -32,10 +32,10 @@ export const accolades = [
 
 export const experience = [
   {
-    title: 'Graphic Designer/Web Developer',
+    title: 'Full-Stack Developer/Graphic Designer',
     period: '2023 — Present',
     description:
-      'At Intuition Education Australia, it was my responsibilty to work on their website, create diagrams/worksheets and edit public facing class + advertisement videos.',
+      'At Intuition Education Australia, it was my responsibilty to work on their software, create diagrams/worksheets and edit public facing class + advertisement videos.',
   },
   {
     title: 'Freelance Web Developer',
