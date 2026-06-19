@@ -67,7 +67,7 @@ export const portfolioItems = [
     ],
     "image": "/img/icebergs.png",
     "alt": "Bondi Icebergs Logo",
-    "title": "Bondi Icebergs Dev Work",
+    "title": "Bondi Icebergs",
     "categoryLabel": "Full-Stack Development"
   },
   {
