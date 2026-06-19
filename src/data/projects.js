@@ -179,6 +179,23 @@ export const projects = [
     }
   },
   {
+    "slug": "icebergs",
+    "title": "Bondi Icebergs - All-Round Marketting.",
+    "image": "/img/icebergs.png",
+    "client": "Bondi Icebergs",
+    "category": "Full-Stack Development",
+    "date": "June, 2026",
+    "paragraphs": [
+      "At APTENT. DIGITAL, I helped work on an internal booking system and admin dashboard for their website, Internally I was responsible for creating the audit-log function, and hooking this up to the backend.",
+      "Furthermore, I helped create their social media marketting post from July - September."
+      "www.icebergs.com.au"
+    ],
+    "website": {
+      "url": "https://icebergs.com.au/",
+      "label": "www.icebergs.com.au"
+    }
+  },
+  {
     "slug": "romca",
     "title": "ROMCA - A Website for a Choir.",
     "image": "/img/romca-home.png",
