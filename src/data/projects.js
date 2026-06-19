@@ -180,7 +180,7 @@ export const projects = [
   },
   {
     "slug": "icebergs",
-    "title": "Bondi Icebergs - All-Round Marketting.",
+    "title": "Bondi Icebergs - All-Round Marketing.",
     "image": "/img/icebergs.png",
     "client": "Bondi Icebergs",
     "category": "Full-Stack Development",
