@@ -59,6 +59,18 @@ export const portfolioItems = [
     "categoryLabel": "Full-Stack Development"
   },
   {
+    "slug": "icebergs",
+    "categories": [
+      "category-graphics",
+      "category-web",
+      "category-stack"
+    ],
+    "image": "/img/icebergs.png",
+    "alt": "Bondi Icebergs Logo",
+    "title": "Bondi Icebergs Workflow",
+    "categoryLabel": "Full-Stack Development"
+  },
+  {
     "slug": "afca",
     "categories": [
       "category-web",
