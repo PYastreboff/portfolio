@@ -97,7 +97,7 @@ export const services = [
 ];
 
 export const stats = [
-  { value: '20+', label: 'CAD MODELS' },
+  { value: '100+', label: 'CAD MODELS' },
   { value: '1000+', label: 'PRINTS COMPLETED' },
   { value: '8+', label: 'YEARS MAKING' },
 ];
