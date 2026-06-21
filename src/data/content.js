@@ -85,9 +85,9 @@ export const services = [
     caption: 'High-quality development of sites at the professional level.',
   },
   {
-    icon: 'fa-solid fa-pen-nib',
-    title: 'Web Design',
-    caption: 'The most modern and high-quality design made at a professional level.',
+    icon: 'fa-solid fa-layer-group',
+    title: 'Full-Stack Development',
+    caption: 'End-to-end web applications — frontend, backend, APIs, and deployment at a professional level.',
   },
   {
     icon: 'fa-solid fa-paintbrush',

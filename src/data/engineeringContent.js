@@ -99,7 +99,7 @@ export const services = [
 export const stats = [
   { value: '20+', label: 'CAD MODELS' },
   { value: '1000+', label: 'PRINTS COMPLETED' },
-  { value: '4+', label: 'YEARS MAKING' },
+  { value: '8+', label: 'YEARS MAKING' },
 ];
 
 export const experienceSections = [
