@@ -200,7 +200,7 @@ export const projects = [
   {
     "slug": "spo",
     "title": "SPX Physics Online - A Website to Teach Physics.",
-    "image": "/img/spo.png",
+    "image": "/img/web-crop.png",
     "client": "St. Pius X College",
     "category": "Web Design",
     "date": "16 May, 2022",
