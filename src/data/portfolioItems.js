@@ -133,7 +133,7 @@ export const portfolioItems = [
       "category-comm",
       "category-vol"
     ],
-    "image": "/img/web-crop.png",
+    "image": "/img/spo.png",
     "alt": "",
     "title": "SPX Physics Online",
     "categoryLabel": "Web Development"
