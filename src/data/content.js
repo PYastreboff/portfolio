@@ -38,7 +38,7 @@ export const experience = [
       'Software engineering internship focused on building and improving secure development tooling, contributing to production codebases, and collaborating with engineers in an agile product environment.',
   },
   {
-    title: 'Junior Developer — APTENT DIGITAL',
+    title: 'Junior Developer — APTENT. DIGITAL',
     period: 'July 2026 — October 2026',
     description:
       'Junior developer role delivering client-facing web and software solutions, supporting feature development, bug fixes, and deployment workflows across active digital projects.',
