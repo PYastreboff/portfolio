@@ -5,8 +5,8 @@ import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import { useProfile } from '../context/ProfileContext';
 
 export default function PortfolioPage() {
-  const { content, profile, pathTo } = useProfile();
-  useDocumentTitle(`${profile.id === 'engineering' ? 'Engineering — ' : ''}Portfolio`);
+  const { content, pathTo } = useProfile();
+  useDocumentTitle();
   const [activeFilter, setActiveFilter] = useState('*');
   const [menuOpen, setMenuOpen] = useState(false);
 

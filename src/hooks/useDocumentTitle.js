@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
-export function useDocumentTitle(title) {
+export function useDocumentTitle() {
   useEffect(() => {
-    document.title = `Peter Yastreboff - ${title}`;
-  }, [title]);
+    document.title = 'Peter Yastreboff';
+  }, []);
 }

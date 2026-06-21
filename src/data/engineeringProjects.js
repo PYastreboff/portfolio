@@ -3,7 +3,7 @@ import { f22FanpageProject } from './f22Fanpage';
 export const projects = [
   {
     slug: '3d-printing',
-    title: '3D Printing',
+    title: 'CAD & Prototyping',
     image: '/img/3d-printing.png',
     client: 'Personal Project',
     category: '3D Printing',
@@ -52,7 +52,7 @@ export const projects = [
     title: 'UNSW Solar Car — DESN1K Capstone',
     image: '/img/solar-car-team.png',
     client: 'UNSW — DESN1K',
-    category: 'Capstone & Prototyping',
+    category: 'Capstone, Prototyping & 3D Printing',
     date: 'January 2023 — May 2023',
     paragraphs: [
       'Capstone project for DESN1K, working as team leader on a solar car design from concept through to a physical prototype. I drove the sleek exterior form in CAD and had the body 3D printed to validate proportions, aerodynamic intent, and assembly before full-scale build decisions.',
@@ -61,13 +61,13 @@ export const projects = [
   },
   {
     slug: 'spx-soccer-robot',
-    title: 'St. Pius X — Soccer Robot Coach',
+    title: 'St Pius X Robotics Coach',
     image: '/img/spx-robotics-openday.png',
-    client: 'St. Pius X College',
+    client: 'St Pius X College',
     category: 'Robotics & Prototyping',
     date: '2020 — 2022',
     paragraphs: [
-      'Coached the college robotics program and helped students design and build Arduino-based soccer robots — from chassis layout and wiring through to tuning movement and ball interaction on a mini pitch.',
+      'Coached the college robotics program and helped students design and build Arduino-based soccer robots — from chassis layout and wiring through to tuning movement and ball interaction on a mini pitch. I also taught EV3 Mindstorms and Python plugins for Mindstorms, guiding students through programming and integration alongside the mechanical builds.',
       'The photo shows students showing off their robot on open day, demonstrating the finished build to visitors and walking through how the hardware, sensors, and code came together as a working team project.',
     ],
   },

@@ -28,8 +28,8 @@ function SectionHeading({ icon, title }) {
 }
 
 export default function ExperiencePage() {
-  const { content, profile } = useProfile();
-  useDocumentTitle(`${profile.id === 'engineering' ? 'Engineering — ' : ''}Experience`);
+  const { content } = useProfile();
+  useDocumentTitle();
 
   return (
     <>

@@ -6,7 +6,7 @@ export const portfolioItems = [
     categories: ['category-print', 'category-proto'],
     image: '/img/bambu-cover.png',
     alt: 'Bambu Lab — 3D printing',
-    title: '3D Printing',
+    title: 'CAD & Prototyping',
     categoryLabel: '3D Printing',
   },
   {
@@ -32,18 +32,18 @@ export const portfolioItems = [
   },
   {
     slug: 'solar-car',
-    categories: ['category-proto', 'category-aero'],
+    categories: ['category-proto', 'category-aero', 'category-print'],
     image: '/img/solar-car-unsw-cover.png',
     alt: 'UNSW Sydney — solar car capstone project',
     title: 'UNSW Solar Car — DESN1K Capstone',
-    categoryLabel: 'Capstone & Prototyping',
+    categoryLabel: 'Capstone, Prototyping & 3D Printing',
   },
   {
     slug: 'spx-soccer-robot',
     categories: ['category-proto'],
     image: '/img/spx-logo.png',
     alt: 'St. Pius X College logo',
-    title: 'St. Pius X Soccer Robot Coach',
+    title: 'St Pius X Robotics Coach',
     categoryLabel: 'Robotics & Prototyping',
   },
 ];

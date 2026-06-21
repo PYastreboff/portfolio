@@ -52,10 +52,10 @@ export const experience = [
       'Led a DESN1K capstone team developing a solar car concept — overseeing the sleek body design, 3D-printed prototype, and integration of electronics including Arduino-based prototyping for control and testing.',
   },
   {
-    title: 'St. Pius X Robotics Coach',
+    title: 'St Pius X Robotics Coach',
     period: '2020 — 2022',
     description:
-      'Coached the college robotics program, mentoring students through design, build, and competition preparation while helping develop practical skills in mechanical systems, problem solving, and teamwork.',
+      'Coached the college robotics program, mentoring students through Arduino-based soccer robots, EV3 Mindstorms builds, and Python plugins for Mindstorms — covering design, coding, competition prep, and practical skills in mechanical systems and teamwork.',
   },
 ];
 

@@ -2,8 +2,8 @@ import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import { useProfile } from '../context/ProfileContext';
 
 export default function AboutPage() {
-  const { content, profile } = useProfile();
-  useDocumentTitle(`${profile.id === 'engineering' ? 'Engineering — ' : ''}About`);
+  const { content } = useProfile();
+  useDocumentTitle();
 
   return (
     <>

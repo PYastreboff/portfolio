@@ -8,7 +8,7 @@ export default function ProjectPage() {
   const { content, pathTo } = useProfile();
   const project = content.projects.find((entry) => entry.slug === slug);
 
-  useDocumentTitle(project?.title ?? 'Portfolio');
+  useDocumentTitle();
 
   if (!project) {
     return <Navigate to={pathTo('portfolio')} replace />;
