@@ -1,16 +1,17 @@
 import { Link, Navigate, useParams } from 'react-router-dom';
 import { assetUrl } from '../utils/assetUrl';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
-import { projects } from '../data/projects';
+import { useProfile } from '../context/ProfileContext';
 
 export default function ProjectPage() {
   const { slug } = useParams();
-  const project = projects.find((entry) => entry.slug === slug);
+  const { content, pathTo } = useProfile();
+  const project = content.projects.find((entry) => entry.slug === slug);
 
   useDocumentTitle(project?.title ?? 'Portfolio');
 
   if (!project) {
-    return <Navigate to="/portfolio" replace />;
+    return <Navigate to={pathTo('portfolio')} replace />;
   }
 
   const bodyParagraphs = project.paragraphs.filter(
@@ -23,7 +24,7 @@ export default function ProjectPage() {
         <h1 className="title title--h1 title__separate">Portfolio</h1>
       </div>
 
-      <Link className="btn-back" to="/portfolio">
+      <Link className="btn-back" to={pathTo('portfolio')}>
         <i className="fa-solid fa-arrow-left" />
         Back to Portfolio
       </Link>

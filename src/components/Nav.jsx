@@ -1,23 +1,26 @@
 import { NavLink } from 'react-router-dom';
+import { useProfile } from '../context/ProfileContext';
 
-const links = [
-  { to: '/', label: 'About', end: true },
-  { to: '/experience', label: 'Experience' },
-  { to: '/portfolio', label: 'Portfolio' },
+const navItems = [
+  { segment: '', label: 'About', end: true },
+  { segment: 'experience', label: 'Experience', end: false },
+  { segment: 'portfolio', label: 'Portfolio', end: false },
 ];
 
 export default function Nav({ variant = 'desktop' }) {
+  const { pathTo } = useProfile();
+
   return (
     <div className={`nav-container nav-container--${variant}`}>
       <ul className="nav">
-        {links.map((link) => (
-          <li key={link.to} className="nav__item">
+        {navItems.map((item) => (
+          <li key={item.segment || 'about'} className="nav__item">
             <NavLink
-              to={link.to}
-              end={link.end}
+              to={pathTo(item.segment)}
+              end={item.end}
               className={({ isActive }) => (isActive ? 'active' : undefined)}
             >
-              {link.label}
+              {item.label}
             </NavLink>
           </li>
         ))}

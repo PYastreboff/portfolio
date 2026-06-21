@@ -1,6 +1,6 @@
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import ProgressBar from '../components/ProgressBar';
-import { accolades, education, experience, skills } from '../data/content';
+import { useProfile } from '../context/ProfileContext';
 
 function Timeline({ items, showPeriod = true }) {
   return (
@@ -27,29 +27,9 @@ function SectionHeading({ icon, title }) {
   );
 }
 
-const sections = [
-  {
-    title: 'Accolades',
-    icon: 'fa-solid fa-award',
-    items: accolades,
-    showPeriod: false,
-  },
-  {
-    title: 'Experience',
-    icon: 'fa-solid fa-briefcase',
-    items: experience,
-    showPeriod: true,
-  },
-  {
-    title: 'Education',
-    icon: 'fa-solid fa-book-open',
-    items: education,
-    showPeriod: true,
-  },
-];
-
 export default function ExperiencePage() {
-  useDocumentTitle('Experience');
+  const { content, profile } = useProfile();
+  useDocumentTitle(`${profile.id === 'engineering' ? 'Engineering — ' : ''}Experience`);
 
   return (
     <>
@@ -57,7 +37,7 @@ export default function ExperiencePage() {
         <h1 className="title title--h1 title__separate">Experience</h1>
       </div>
 
-      {sections.map((section) => (
+      {content.experienceSections.map((section) => (
         <div key={section.title}>
           <SectionHeading icon={section.icon} title={section.title} />
           <Timeline items={section.items} showPeriod={section.showPeriod} />
@@ -66,7 +46,7 @@ export default function ExperiencePage() {
 
       <h2 className="title title--h2 mt-3">My Skills</h2>
       <div className="box box--s2 box-inner mb-0">
-        {skills.map((skill) => (
+        {content.skills.map((skill) => (
           <ProgressBar key={skill.name} label={skill.name} level={skill.level} />
         ))}
       </div>

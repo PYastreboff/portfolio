@@ -32,6 +32,18 @@ export const accolades = [
 
 export const experience = [
   {
+    title: 'SWE Intern — Secure Code Warrior',
+    period: 'July 2026 — September 2026',
+    description:
+      'Software engineering internship focused on building and improving secure development tooling, contributing to production codebases, and collaborating with engineers in an agile product environment.',
+  },
+  {
+    title: 'Junior Developer — APTENT DIGITAL',
+    period: 'July 2026 — October 2026',
+    description:
+      'Junior developer role delivering client-facing web and software solutions, supporting feature development, bug fixes, and deployment workflows across active digital projects.',
+  },
+  {
     title: 'Full-Stack Developer/Graphic Designer',
     period: '2023 — Present',
     description:
@@ -88,4 +100,32 @@ export const stats = [
   { value: '50+', label: 'PROJECTS' },
   { value: '15+', label: 'SATISFIED CLIENTS' },
   { value: '8+', label: 'YEARS EXPERIENCE' },
+];
+
+export const about = {
+  intro:
+    "Hi! I'm Peter I am a responsible and focused Computer Science and Engineering student with experience in software and web design.",
+  body:
+    'My work ethic is paramount, and I believe in completing every task with precision and effort. I take pride in my attention to detail and commitment to meeting deadlines, ensuring that my contributions positively impact any team. Employers will find me a motivated and diligent individual, ready to tackle challenges and exceed expectations in software development.',
+};
+
+export const experienceSections = [
+  {
+    title: 'Accolades',
+    icon: 'fa-solid fa-award',
+    items: accolades,
+    showPeriod: false,
+  },
+  {
+    title: 'Experience',
+    icon: 'fa-solid fa-briefcase',
+    items: experience,
+    showPeriod: true,
+  },
+  {
+    title: 'Education',
+    icon: 'fa-solid fa-book-open',
+    items: education,
+    showPeriod: true,
+  },
 ];

@@ -2,15 +2,16 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Sidebar from './Sidebar';
 import Nav from './Nav';
+import { useProfile } from '../context/ProfileContext';
 import { useBackToTop } from '../hooks/useBackToTop';
 import { useSunFollow } from '../hooks/useSunFollow';
 
 export default function Layout() {
   const location = useLocation();
-  const isAbout = location.pathname === '/';
-  const isExperience = location.pathname === '/experience';
-  const isPortfolio =
-    location.pathname === '/portfolio' || location.pathname.startsWith('/portfolio/');
+  const { profile, isActivePath } = useProfile();
+  const isAbout = isActivePath('');
+  const isExperience = isActivePath('experience');
+  const isPortfolio = isActivePath('portfolio');
   const contentBoxClass = isPortfolio ? 'box-outer portfolio-box' : 'box-outer';
 
   useBackToTop();
@@ -22,16 +23,17 @@ export default function Layout() {
 
   useEffect(() => {
     document.body.className = isExperience ? 'bg-triangles' : '';
-    document.documentElement.className = /Android|webOS|iPhone|iPod|iPad|BlackBerry|IEMobile|Opera Mini/i.test(
-      navigator.userAgent,
-    )
-      ? 'touch'
-      : 'no-touch';
+    document.documentElement.className = profile.themeClass;
+    document.documentElement.classList.add(
+      /Android|webOS|iPhone|iPod|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+        ? 'touch'
+        : 'no-touch',
+    );
 
     return () => {
       document.body.className = '';
     };
-  }, [isExperience]);
+  }, [isExperience, profile.themeClass]);
 
   return (
     <>

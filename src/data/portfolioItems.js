@@ -1,3 +1,5 @@
+import { f22FanpagePortfolioItem } from './f22Fanpage';
+
 export const portfolioItems = [
   {
     "slug": "kk",
@@ -92,17 +94,7 @@ export const portfolioItems = [
     "title": "Russian Orthodox Male Choir of Australia Website",
     "categoryLabel": "Web Design"
   },
-  {
-    "slug": "f22",
-    "categories": [
-      "category-web",
-      "category-software"
-    ],
-    "image": "/img/raptor-cover.png",
-    "alt": "",
-    "title": "F-22 Raptor Fanpage",
-    "categoryLabel": "Web & Software Design"
-  },
+  { ...f22FanpagePortfolioItem, categories: ['category-web', 'category-software'] },
   {
     "slug": "mri",
     "categories": [

@@ -1,9 +1,12 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { site } from '../data/site';
+import { useProfile } from '../context/ProfileContext';
 import { assetUrl } from '../utils/assetUrl';
 
 export default function Sidebar() {
   const [showContacts, setShowContacts] = useState(false);
+  const { profile, switchTo } = useProfile();
 
   return (
     <aside className="col-12 col-md-12 col-xl-3">
@@ -15,7 +18,14 @@ export default function Sidebar() {
 
           <div className="text-xl-center">
             <h3 className="title title--h3 sidebar__name">{site.name}</h3>
-            <div className="badge">{site.role}</div>
+            <div className="badge">{profile.role}</div>
+          </div>
+
+          <div className="profile-switch">
+            <Link className="profile-switch__link" to={switchTo}>
+              {profile.switchLabel}
+              <i className="fa-solid fa-arrow-right" aria-hidden="true" />
+            </Link>
           </div>
 
           <button
@@ -97,7 +107,7 @@ export default function Sidebar() {
 
           <div className="social">
             {site.social.map((link) => (
-              <a key={link.url} className="social__link" href={link.url}>
+              <a key={link.url} className="social__link" href={link.url} target="_blank" rel="noreferrer">
                 <i className={link.icon} />
               </a>
             ))}

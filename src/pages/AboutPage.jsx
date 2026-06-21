@@ -1,28 +1,22 @@
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
-import { services, stats } from '../data/content';
+import { useProfile } from '../context/ProfileContext';
 
 export default function AboutPage() {
-  useDocumentTitle('About');
+  const { content, profile } = useProfile();
+  useDocumentTitle(`${profile.id === 'engineering' ? 'Engineering — ' : ''}About`);
 
   return (
     <>
       <div className="pb-0 pb-sm-2">
         <h1 className="title title--h1 title__separate">About Me</h1>
         <p>
-          <b>Hi!</b> I'm Peter I am a responsible and focused Computer Science and Engineering
-          student with experience in software and web design.
+          <b>Hi!</b> {content.about.intro.replace(/^Hi!\s*/i, '')}
         </p>
-        <p>
-          My work ethic is paramount, and I believe in completing every task with precision and
-          effort. I take pride in my attention to detail and commitment to meeting deadlines,
-          ensuring that my contributions positively impact any team. Employers will find me a
-          motivated and diligent individual, ready to tackle challenges and exceed expectations in
-          software development.
-        </p>
+        <p>{content.about.body}</p>
       </div>
 
       <div className="top-boxes">
-        {stats.map((stat) => (
+        {content.stats.map((stat) => (
           <div key={stat.label} className="top-box">
             <div className="case-item box box--s2 box-inner">
               <div className="top-box__content">
@@ -36,7 +30,7 @@ export default function AboutPage() {
 
       <h2 className="title title--h2 mt-3">What I'm Doing</h2>
       <div className="row">
-        {services.map((service) => (
+        {content.services.map((service) => (
           <div key={service.title} className="col-12 col-lg-6">
             <div className="case-item box box--s2 box-inner">
               <i className={`case-item__icon ${service.icon}`} />
