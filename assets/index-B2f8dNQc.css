@@ -14377,3 +14377,43 @@ a i:hover {
     letter-spacing: 0.01em;
   }
 }
+html.theme-engineering {
+  --color-accent: #c44b4b;
+  --color-gradient: linear-gradient(137.84deg, #e24b4b 30.31%, #8b1e1e 93.75%);
+  --color-gradient-text: linear-gradient(90deg, #e34949, #ec3c53);
+  --color-gradient-border: linear-gradient(155deg, #d11b1b 0%, rgba(255, 191, 96, 0) 50%);
+}
+
+html.theme-engineering .sun {
+  background-image: linear-gradient(#e72929 10%, #ff4d00);
+}
+
+@media only screen and (max-width: 768px) {
+  html.theme-engineering .sun {
+    background: radial-gradient(circle, #511515 0%, #111 70%);
+  }
+}
+
+.profile-switch {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.profile-switch__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.profile-switch__link:hover {
+  opacity: 0.85;
+  color: var(--color-accent);
+}
+
+.profile-switch__link i {
+  font-size: 0.75rem;
+}
