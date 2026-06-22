@@ -1,0 +1,57 @@
+/* Gradient text & icons — both profiles */
+html.theme-software .title--tone,
+html.theme-engineering .title--tone,
+html.theme-software a.link-gradient,
+html.theme-engineering a.link-gradient,
+html.theme-software .nav__item a.active,
+html.theme-engineering .nav__item a.active,
+html.theme-software .filter__item.active a,
+html.theme-engineering .filter__item.active a,
+html.theme-software .timeline__period,
+html.theme-engineering .timeline__period,
+html.theme-software .top,
+html.theme-engineering .top {
+  background: var(--color-gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+html.theme-software .case-item__icon,
+html.theme-engineering .case-item__icon,
+html.theme-software .icon-box > i[class*='fa-'],
+html.theme-engineering .icon-box > i[class*='fa-'] {
+  background: none;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+html.theme-software .case-item__icon::before,
+html.theme-engineering .case-item__icon::before,
+html.theme-software .icon-box > i[class*='fa-']::before,
+html.theme-engineering .icon-box > i[class*='fa-']::before {
+  background: var(--color-gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+html.theme-software .timeline__item::before,
+html.theme-engineering .timeline__item::before {
+  background: var(--color-gradient-text);
+}
+
+html.theme-software .timeline__item::before {
+  box-shadow: 0 0 0 0.25rem rgba(73, 183, 227, 0.12);
+}
+
+html.theme-engineering .timeline__item::before {
+  box-shadow: 0 0 0 0.25rem rgba(150, 48, 48, 0.14);
+}
+
+html.theme-software .progress-bar span,
+html.theme-engineering .progress-bar span {
+  background: var(--color-gradient);
+}

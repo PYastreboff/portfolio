@@ -8,6 +8,7 @@ import '../css/style.css';
 import '../css/fontawesome/css/all.min.css';
 import './styles/layout-fixes.css';
 import './styles/theme-engineering.css';
+import './styles/theme-profile-gradients.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
