@@ -34,9 +34,9 @@ export const portfolioItems = [
     slug: 'solar-car',
     categories: ['category-proto', 'category-aero', 'category-print'],
     image: '/img/solar-car-unsw-cover.png',
-    alt: 'UNSW Sydney — solar car capstone project',
-    title: 'UNSW Solar Car — DESN1K Capstone',
-    categoryLabel: 'Capstone, Prototyping & 3D Printing',
+    alt: 'UNSW Sydney — solar car DESN1K project',
+    title: 'UNSW Solar Car — DESN1K Project',
+    categoryLabel: 'Prototyping & 3D Printing',
   },
   {
     slug: 'spx-soccer-robot',

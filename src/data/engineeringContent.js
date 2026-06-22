@@ -46,10 +46,10 @@ export const experience = [
       'Independent CAD modelling, 3D printing, and prototyping work — exploring aerospace forms, functional assemblies, and iterative design workflows.',
   },
   {
-    title: 'Team Lead — UNSW Solar Car Project (DESN1K Capstone)',
+    title: 'Team Lead — UNSW Solar Car Project (DESN1K)',
     period: 'January 2023 — May 2023',
     description:
-      'Led a DESN1K capstone team developing a solar car concept — overseeing the sleek body design, 3D-printed prototype, and integration of electronics including Arduino-based prototyping for control and testing.',
+      'Led a DESN1K project team developing a solar car concept — overseeing the sleek body design, 3D-printed prototype, and integration of electronics including Arduino-based prototyping for control and testing.',
   },
   {
     title: 'St Pius X Robotics Coach',

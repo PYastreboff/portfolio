@@ -49,13 +49,13 @@ export const projects = [
   },
   {
     slug: 'solar-car',
-    title: 'UNSW Solar Car — DESN1K Capstone',
+    title: 'UNSW Solar Car — DESN1K Project',
     image: '/img/solar-car-team.png',
     client: 'UNSW — DESN1K',
-    category: 'Capstone, Prototyping & 3D Printing',
+    category: 'Prototyping & 3D Printing',
     date: 'January 2023 — May 2023',
     paragraphs: [
-      'Capstone project for DESN1K, working as team leader on a solar car design from concept through to a physical prototype. I drove the sleek exterior form in CAD and had the body 3D printed to validate proportions, aerodynamic intent, and assembly before full-scale build decisions.',
+      'DESN1K project, working as team leader on a solar car design from concept through to a physical prototype. I drove the sleek exterior form in CAD and had the body 3D printed to validate proportions, aerodynamic intent, and assembly before full-scale build decisions.',
       'The project combined mechanical design with hands-on prototyping — including electronics work and Arduino-based prototyping to test control logic and subsystem behaviour early in the development cycle, while coordinating the team across design, fabrication, and integration milestones.',
     ],
   },
