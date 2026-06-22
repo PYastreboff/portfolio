@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { site } from '../data/site';
+import site from '../../data/site.json';
 import { useProfile } from '../context/ProfileContext';
 import { assetUrl } from '../utils/assetUrl';
 
@@ -21,13 +21,6 @@ export default function Sidebar() {
             <div className="badge">{profile.role}</div>
           </div>
 
-          <div className="profile-switch">
-            <Link className="profile-switch__link" to={switchTo}>
-              {profile.switchLabel}
-              <i className="fa-solid fa-arrow-right" aria-hidden="true" />
-            </Link>
-          </div>
-
           <button
             type="button"
             className="btn btn--small btn--icon-right sidebar__btn"
@@ -36,6 +29,17 @@ export default function Sidebar() {
             <span>{showContacts ? 'Hide Contacts' : 'Show Contacts'}</span>
             <i className="fa fa-chevron-down" />
           </button>
+        </div>
+
+        <div className="profile-switch">
+          <Link
+            className="profile-switch__link"
+            to={switchTo}
+            aria-label={`Switch to ${profile.switchLabel}`}
+          >
+            {profile.switchLabel}
+            <i className="fa-solid fa-arrow-right" aria-hidden="true" />
+          </Link>
         </div>
 
         <div

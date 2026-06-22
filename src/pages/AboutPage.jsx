@@ -28,7 +28,7 @@ export default function AboutPage() {
         ))}
       </div>
 
-      <h2 className="title title--h2 mt-3">What I'm Doing</h2>
+      <h2 className="title title--h2">What I'm Doing</h2>
       <div className="row">
         {content.services.map((service) => (
           <div key={service.title} className="col-12 col-lg-6">

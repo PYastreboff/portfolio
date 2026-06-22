@@ -15,26 +15,3 @@ html.theme-engineering .sun {
   }
 }
 
-.profile-switch {
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.profile-switch__link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-size: 0.85rem;
-  color: var(--color-accent);
-  text-decoration: none;
-  transition: opacity 0.2s ease;
-}
-
-.profile-switch__link:hover {
-  opacity: 0.85;
-  color: var(--color-accent);
-}
-
-.profile-switch__link i {
-  font-size: 0.75rem;
-}
