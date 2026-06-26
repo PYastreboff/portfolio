@@ -48,7 +48,7 @@ export const projects = [
     },
   },
   {
-    slug: 'solidwords',
+    slug: 'solidworks',
     title: 'CAD',
     image: '/img/cad_cover.png',
     client: 'Clients, Personal & University',
