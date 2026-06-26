@@ -48,6 +48,19 @@ export const projects = [
     },
   },
   {
+    slug: 'solidwords',
+    title: 'CAD',
+    image: '/img/cad_cover.png',
+    client: 'Clients, Personal & University',
+    category: 'CAD',
+    date: '2022 — Present',
+    paragraphs: [
+      'A collection of CAD projects created in SolidWorks, showcasing a range of functional components and my experience, mechanical assemblies, concept models, and design explorations. Each project demonstrates the process from parametric modelling and feature development to detailed refinement and final presentation.',
+      'This portfolio highlights a complete engineering design workflow, including design intent, part and assembly modelling, configuration management, tolerance considerations, iterative revisions, and the production of technical drawings and visualisations for manufacture or prototyping.',
+    ],
+    website: null;
+  },
+  {
     slug: 'solar-car',
     title: 'UNSW Solar Car — DESN1K Project',
     image: '/img/solar-car-team.png',
