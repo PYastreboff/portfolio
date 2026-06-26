@@ -49,7 +49,7 @@ export const projects = [
   },
   {
     slug: 'solidworks',
-    title: 'My Advanced and Far Reaching Solidworks Models',
+    title: 'My Advanced and Far Reaching Solidworks Experiences',
     image: '/img/solid_cad.png',
     client: 'Clients, Personal & University',
     category: 'CAD',
