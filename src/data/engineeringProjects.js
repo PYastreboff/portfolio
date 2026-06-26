@@ -58,7 +58,10 @@ export const projects = [
       'A collection of CAD projects created in SolidWorks, showcasing a range of functional components and my experience, mechanical assemblies, concept models, and design explorations. Each project demonstrates the process from parametric modelling and feature development to detailed refinement and final presentation.',
       'This portfolio highlights a complete engineering design workflow, including design intent, part and assembly modelling, configuration management, tolerance considerations, iterative revisions, and the production of technical drawings and visualisations for manufacture or prototyping.',
     ],
-    website: null;
+    website: {
+      url: 'https://www.solidworks.com/',
+      label: 'www.solidworks.com',
+    },
   },
   {
     slug: 'solar-car',
