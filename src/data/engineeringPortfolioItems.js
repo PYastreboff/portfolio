@@ -23,6 +23,14 @@ export const portfolioItems = [
     categoryLabel: 'CAD & Aerospace',
   },
   {
+    slug: 'solidworks',
+    categories: ['category-cad', 'category-aero', 'category-mech'],
+    image: '/img/solidworks.png',
+    alt: 'Solidworks Logo',
+    title: 'Solidwoks Models',
+    categoryLabel: 'CAD',
+  },
+  {
     slug: 'aerosoc-eng',
     categories: ['category-aero', 'category-proto'],
     image: '/img/aerosoc.png',
