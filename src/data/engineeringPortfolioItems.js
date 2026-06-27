@@ -31,6 +31,14 @@ export const portfolioItems = [
     categoryLabel: 'CAD',
   },
   {
+    slug: 'hypersonic',
+    categories: ['category-aero', 'category-proto'],
+    image: '/img/hyper.png',
+    alt: 'Hypersonic Visualiser Cover',
+    title: 'Hypersonic CFD Visualiser',
+    categoryLabel: 'Aerospace & Prototyping',
+  },
+  {
     slug: 'aerosoc-eng',
     categories: ['category-aero', 'category-proto'],
     image: '/img/aerosoc.png',
