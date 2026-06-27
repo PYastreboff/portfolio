@@ -55,8 +55,8 @@ export const projects = [
     category: 'Aerospace',
     date: 'July 2026',
     paragraphs: [
-      'A collection of CAD projects created in SolidWorks, showcasing a range of functional components and my experience, mechanical assemblies, concept models, and design explorations. Each project demonstrates the process from parametric modelling and feature development to detailed refinement and final presentation.',
-      'This portfolio highlights a complete engineering design workflow, including design intent, part and assembly modelling, configuration management, tolerance considerations, iterative revisions, and the production of technical drawings and visualisations for manufacture or prototyping.',
+      'I built the Hypersonics Visualiser as a browser-based virtual wind tunnel: place 3D bodies in a flow, set Mach number and altitude, and see streamlines, shocks, and surface pressure and temperature in real time, with drag, lift, and Reynolds number alongside. A higher-fidelity mode runs a 2D compressible Euler solver in a Web Worker for slice-plane views of the flow field.',
+      'It covers subsonic, transonic, supersonic, and hypersonic flow. Free-stream conditions use ISA atmosphere and ideal gas relations (ρ = P/RT, a = √(γRT)). Subsonic flow uses potential-flow-style perturbations; transonic flow (roughly Mach 0.7–1.3) keeps that framework but adds local compressibility thickening near the body as Mach approaches 1. Supersonic flow uses oblique-shock theory and Rankine–Hugoniot jump conditions; hypersonic flow uses modified Newtonian pressure (Cₚ ∝ sin²θ) and stagnation temperature T₀ = T(1 + ½(γ−1)M²). Skin friction and boundary-layer transition use classical flat-plate correlations; the Euler solver integrates the inviscid compressible flow equations on a 2D grid.',
     ],
     website: {
       url: 'https://pyastreboff.github.io/hypersonics-visualiser/',
