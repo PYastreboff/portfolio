@@ -49,7 +49,7 @@ export const projects = [
   },
   {
     slug: 'hypersonic',
-    title: 'A virtual Wind Tunnel',
+    title: 'CFD Virtual Wind Tunnel',
     image: '/img/hyper.png',
     client: 'Personal Project',
     category: 'Aerospace',
