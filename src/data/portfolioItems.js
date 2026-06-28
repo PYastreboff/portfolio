@@ -88,8 +88,8 @@ export const portfolioItems = [
     slug: 'flow',
     categories: ['category-software', 'category-web', 'category-comm'],
     image: '/img/flow.png',
-    alt: 'FlowVisualiser Cover',
-    title: 'CFD Flow Visualiser',
+    alt: 'Flow Visualiser Cover',
+    title: 'CFD Hypersonics + Flow Visualiser',
     categoryLabel: 'Softare & Frontend Design',
   },
   {
