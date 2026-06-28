@@ -34,8 +34,8 @@ export const portfolioItems = [
     slug: 'flow',
     categories: ['category-aero', 'category-proto'],
     image: '/img/flow.png',
-    alt: 'FlowVisualiser Cover',
-    title: 'CFD Flow Visualiser',
+    alt: 'Flow Visualiser Cover',
+    title: 'CFD Flow + Hypersonics Visualiser',
     categoryLabel: 'Aerospace & Prototyping',
   },
   {
