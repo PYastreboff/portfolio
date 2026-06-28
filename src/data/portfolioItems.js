@@ -85,6 +85,14 @@ export const portfolioItems = [
     "categoryLabel": "Web Design"
   },
   {
+    slug: 'flow',
+    categories: ['category-software', 'category-web', 'category-comm'],
+    image: '/img/flow.png',
+    alt: 'FlowVisualiser Cover',
+    title: 'CFD Flow Visualiser',
+    categoryLabel: 'Softare & Frontend Design',
+  },
+  {
     "slug": "romca",
     "categories": [
       "category-web"
