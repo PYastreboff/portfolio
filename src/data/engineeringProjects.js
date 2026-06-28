@@ -48,16 +48,15 @@ export const projects = [
     },
   },
   {
-    slug: 'hypersonic',
+    slug: 'flow',
     title: 'CFD Virtual Wind Tunnel',
-    image: '/img/hyper.png',
+    image: '/img/flow.png',
     client: 'Personal Project',
     category: 'Aerospace',
     date: 'July 2026',
     paragraphs: [
-      'I built the Hypersonics Visualiser as a browser-based virtual wind tunnel: place 3D bodies in a flow, set Mach number and altitude, and see streamlines, shocks, and surface pressure and temperature in real time, with drag, lift, and Reynolds number alongside. A higher-fidelity mode runs a 2D compressible Euler solver in a Web Worker for slice-plane views of the flow field.',
-      'It covers subsonic, transonic, supersonic, and hypersonic flow. Free-stream conditions use ISA atmosphere and ideal gas relations (ρ = P/RT, a = √(γRT)). Subsonic flow uses potential-flow-style perturbations; transonic flow (roughly Mach 0.7–1.3) keeps that framework but adds local compressibility thickening near the body as Mach approaches 1. Supersonic flow uses oblique-shock theory and Rankine–Hugoniot jump conditions; hypersonic flow uses modified Newtonian pressure (Cₚ ∝ sin²θ) and stagnation temperature T₀ = T(1 + ½(γ−1)M²). Skin friction and boundary-layer transition use classical flat-plate correlations; the Euler solver integrates the inviscid compressible flow equations on a 2D grid.',
-      '(Still in production)',
+      'Flow Visualiser is a browser-based aerodynamics app I built with React, TypeScript, and Three.js. It has two views: a 2D Lattice Boltzmann wind tunnel (ported from a Python prototype) with live or pre-rendered flow, draggable obstacles, and velocity/pressure colour maps; and a 3D tunnel where you place shapes or import STLs, tune Mach and altitude, and explore streamlines, shocks, and slice planes. I used Zustand for state, canvas rendering with a jet colormap, Web Workers for heavier solves, and deployed it with Vite to GitHub Pages.',
+      'The physics mixes LBM and classical aerodynamics. The CFD solver uses a 9-velocity Lattice Boltzmann method: particles stream across the grid, bounce off obstacles, and relax toward an equilibrium state, with flow speed shown in m/s. The 3D preview uses standard-atmosphere models for temperature, pressure, and density with altitude, links Mach number to airspeed, and estimates forces with modified Newtonian pressure, skin-friction correlations, and shock models; an optional 2D Euler solver in a Web Worker adds a sharper compressible slice view. The goal was interactive, readable aerodynamics entirely in the browser.',
     ],
     website: {
       url: 'https://pyastreboff.github.io/hypersonics-visualiser/',
