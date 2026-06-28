@@ -31,11 +31,11 @@ export const portfolioItems = [
     categoryLabel: 'CAD',
   },
   {
-    slug: 'hypersonic',
+    slug: 'flow',
     categories: ['category-aero', 'category-proto'],
-    image: '/img/hyper.png',
-    alt: 'Hypersonic Visualiser Cover',
-    title: 'Hypersonic CFD Visualiser',
+    image: '/img/flow.png',
+    alt: 'FlowVisualiser Cover',
+    title: 'CFD Flow Visualiser',
     categoryLabel: 'Aerospace & Prototyping',
   },
   {
