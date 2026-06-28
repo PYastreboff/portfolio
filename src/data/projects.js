@@ -115,7 +115,7 @@ export const projects = [
     ],
     website: {
       url: 'https://pyastreboff.github.io/hypersonics-visualiser/',
-      label: 'Flow Visualiser Webapp Link',
+      label: 'pyastreboff.github.io/hypersonics-visualiser',
     },
   },
   {
