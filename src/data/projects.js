@@ -103,6 +103,22 @@ export const projects = [
     }
   },
   {
+    slug: 'flow',
+    title: 'CFD Virtual Wind Tunnel',
+    image: '/img/flow.png',
+    client: 'Personal Project',
+    category: 'Aerospace',
+    date: 'July 2026',
+    paragraphs: [
+      'Flow Visualiser is a browser-based aerodynamics app I built with React, TypeScript, and Three.js. It has two views: a 2D Lattice Boltzmann wind tunnel (ported from a Python prototype) with live or pre-rendered flow, draggable obstacles, and velocity/pressure colour maps; and a 3D tunnel where you place shapes or import STLs, tune Mach and altitude, and explore streamlines, shocks, and slice planes. I used Zustand for state, canvas rendering with a jet colormap, Web Workers for heavier solves, and deployed it with Vite to GitHub Pages.',
+      'The physics mixes LBM and classical aerodynamics. The CFD solver uses a 9-velocity Lattice Boltzmann method: particles stream across the grid, bounce off obstacles, and relax toward an equilibrium state, with flow speed shown in m/s. The 3D preview uses standard-atmosphere models for temperature, pressure, and density with altitude, links Mach number to airspeed, and estimates forces with modified Newtonian pressure, skin-friction correlations, and shock models; an optional 2D Euler solver in a Web Worker adds a sharper compressible slice view. The goal was interactive, readable aerodynamics entirely in the browser.',
+    ],
+    website: {
+      url: 'https://pyastreboff.github.io/hypersonics-visualiser/',
+      label: 'pyastreboff.github.io/hypersonics-visualiser',
+    },
+  },
+  {
     "slug": "mjo",
     "title": "Matt Jones - A Signpost Website for a Surgeon.",
     "image": "/img/osteocytebig.jpg",
