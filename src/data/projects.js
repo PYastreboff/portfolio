@@ -114,7 +114,7 @@ export const projects = [
       'The physics mixes LBM and classical aerodynamics. The CFD solver uses a 9-velocity Lattice Boltzmann method: particles stream across the grid, bounce off obstacles, and relax toward an equilibrium state, with flow speed shown in m/s. The 3D preview uses standard-atmosphere models for temperature, pressure, and density with altitude, links Mach number to airspeed, and estimates forces with modified Newtonian pressure, skin-friction correlations, and shock models; an optional 2D Euler solver in a Web Worker adds a sharper compressible slice view. The goal was interactive, readable aerodynamics entirely in the browser.',
     ],
     website: {
-      url: 'https://pyastreboff.github.io/hypersonics-visualiser/',
+      url: 'Flow Visualiser Link',
       label: 'pyastreboff.github.io/hypersonics-visualiser',
     },
   },
