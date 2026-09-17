@@ -172,8 +172,8 @@ export const projects = [
     date: 'September 2026',
     paragraphs: [
       'The Australian Male Choir approached me to build a professional marketing site that could carry their reputation as an elite a capella ensemble. The result is a polished, single-page-led experience with a cinematic fading gallery, a full media hub (performance photography, video highlights, and studio recordings), event categories for concerts, corporate functions, weddings and private occasions, and a news section that gives the choir a place to announce its story.',
-      'I built it with React, Vite, and Tailwind CSS, and deployed it on Vercel under their own domain. The enquiry workflow runs through a Vercel serverless function that formats and sends branded email notifications and visitor confirmations via the Resend API, with an integrated spam honeypot — the whole stack designed so the choir can manage it themselves.',
-      'www.australianmalechoir.com.au (or https://amc-website-rho.vercel.app/)',
+      'I built it with React, Vite, and Tailwind CSS, and deployed it on Vercel under their own domain. The enquiry workflow runs through a Vercel serverless function that formats and sends branded email notifications and visitor confirmations via the Resend API, with an integrated spam honeypot — the whole stack designed so the choir can manage it themselves. (also at https://amc-website-rho.vercel.app/)',
+      'www.australianmalechoir.com.au',
     ],
     website: {
       url: 'https://www.australianmalechoir.com.au/',
