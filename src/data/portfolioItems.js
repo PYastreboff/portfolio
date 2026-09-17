@@ -120,8 +120,19 @@ export const portfolioItems = [
       "category-web"
     ],
     "image": "/img/mjo-cover.png",
-    "alt": "",
+    "alt": "Matt Jones",
     "title": "Matt Jones Ortho",
+    "categoryLabel": "Web Design"
+  },
+  {
+    "slug": "amc",
+    "categories": [
+      "category-web",
+      "category-stack"
+    ],
+    "image": "/img/amc-cover.png",
+    "alt": "Australian Male Choir Cover",
+    "title": "Australian Male Choir Website",
     "categoryLabel": "Web Design"
   },
   {
