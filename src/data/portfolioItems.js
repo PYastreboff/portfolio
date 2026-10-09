@@ -80,8 +80,19 @@ export const portfolioItems = [
       "category-stack"
     ],
     "image": "/img/afca2.png",
-    "alt": "",
+    "alt": "AFCA Logo",
     "title": "AFCA Web Revamp",
+    "categoryLabel": "Web Design"
+  },
+  {
+    "slug": "ltd",
+    "categories": [
+      "category-web",
+      "category-graphics"
+    ],
+    "image": "/img/ltd-cover.png",
+    "alt": "Living the Dream Logo",
+    "title": "Living the Dream Website",
     "categoryLabel": "Web Design"
   },
   {
