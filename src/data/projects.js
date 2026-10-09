@@ -207,7 +207,6 @@ export const projects = [
     "paragraphs": [
       "I designed and built a responsive marketing website for a personal trainer and competitive strongman, featuring a bold hero, service offerings, an about section, and Instagram-driven booking. The centerpiece is a 'Workout Vending Machine', which is an interactive web app where gym members scan a poster QR code, pick a training category, and receive a fresh daily workout they can tick off exercise by exercise. It runs on vanilla JavaScript with a deterministic daily-rotation engine, so every visitor sees the same workout each day and the full library cycles before repeating.",
       "I also built a printable A4 poster generator with a dynamic QR code, localStorage progress tracking, shareable deep links, and an accessible, reduced-motion-aware UI — all with no build step or framework. The site is deployed as a lightweight static build, giving the client a zero-cost tool that doubles as a lead magnet for personal training.",
-      "www.livingthedreamathleticperformance.com"
     ],
     "website": {
       "url": "www.livingthedreamathleticperformance.com",
