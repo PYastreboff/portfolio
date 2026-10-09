@@ -92,7 +92,7 @@ export const portfolioItems = [
     ],
     "image": "/img/ltd-cover.png",
     "alt": "Living the Dream Logo",
-    "title": "Living the Dream Website",
+    "title": "Living the Dream",
     "categoryLabel": "Web Design"
   },
   {
