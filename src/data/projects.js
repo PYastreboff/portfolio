@@ -119,6 +119,21 @@ export const projects = [
     },
   },
   {
+    slug: 'scw',
+    title: 'Secure Code Warrior',
+    image: '/img/scw.png',
+    client: 'Secure Code Warrior',
+    category: 'Full-Stack',
+    date: 'Jul-Dec 2026',
+    "paragraphs": [
+      "Contributed to core product development at Secure Code Warrior, focusing on the reporting service and trust agent components. Designed and integrated robust API surfaces to streamline backend communication and enhance platform capabilities.",
+      "Engineered and optimized vulnerability ingestion pipelines, ensuring efficient data processing and seamless integration of security intelligence across enterprise workflows."
+    ]
+    website: {
+      url: 'www.securecodewarrior.com',
+      label: 'www.securecodewarrior.com',
+    },
+  {
     "slug": "mjo",
     "title": "Matt Jones - A Signpost Website for a Surgeon.",
     "image": "/img/osteocytebig.jpg",
