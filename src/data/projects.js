@@ -132,7 +132,8 @@ export const projects = [
     website: {
       url: 'www.securecodewarrior.com',
       label: 'www.securecodewarrior.com',
-    },
+    }
+  },
   {
     "slug": "mjo",
     "title": "Matt Jones - A Signpost Website for a Surgeon.",
