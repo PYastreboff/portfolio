@@ -14,6 +14,7 @@ export const portfolioItems = [
   {
     "slug": "scw",
     "categories": [
+      "category-stack",
       "category-web",
       "category-graphics",
       "category-soft"
