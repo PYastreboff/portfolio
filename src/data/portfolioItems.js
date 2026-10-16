@@ -114,7 +114,7 @@ export const portfolioItems = [
     image: '/img/flow.png',
     alt: 'Flow Visualiser Cover',
     title: 'CFD Hypersonics + Flow Visualiser',
-    categoryLabel: 'Softare & Frontend Design',
+    categoryLabel: 'Software & Frontend Design',
   },
   {
     "slug": "romca",
