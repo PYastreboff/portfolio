@@ -131,7 +131,7 @@ export const projects = [
       "www.securecodewarrior.com"
     ],
     website: {
-      url: 'www.securecodewarrior.com',
+      url: 'https://www.securecodewarrior.com/',
       label: 'www.securecodewarrior.com',
     }
   },
