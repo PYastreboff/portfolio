@@ -12,6 +12,18 @@ export const portfolioItems = [
     "categoryLabel": "Web Design"
   },
   {
+    "slug": "scw",
+    "categories": [
+      "category-web",
+      "category-graphics",
+      "category-soft"
+    ],
+    "image": "/img/scw.png",
+    "alt": "Secure Code Warrior Logo",
+    "title": "Secure Code Warrior",
+    "categoryLabel": "Full-Stack Development"
+  },
+  {
     "slug": "intu",
     "categories": [
       "category-web",
@@ -20,7 +32,7 @@ export const portfolioItems = [
       "category-comm"
     ],
     "image": "/img/intu.png",
-    "alt": "",
+    "alt": "Intuition Logo",
     "title": "Intuition Education",
     "categoryLabel": "Web Design & Graphic Design"
   },
@@ -44,7 +56,7 @@ export const portfolioItems = [
       "category-stack"
     ],
     "image": "/img/mma5.png",
-    "alt": "",
+    "alt": "MMA Logo",
     "title": "Maestro's Music Academy",
     "categoryLabel": "Full-Stack Development"
   },
