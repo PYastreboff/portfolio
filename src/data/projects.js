@@ -132,7 +132,7 @@ export const projects = [
     ],
     website: {
       url: 'https://www.securecodewarrior.com/',
-      label: 'www.securecodewarrior.com',
+      label: 'www.securecodewarrior.com'
     }
   },
   {
