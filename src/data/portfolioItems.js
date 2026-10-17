@@ -2,16 +2,6 @@ import { f22FanpagePortfolioItem } from './f22Fanpage';
 
 export const portfolioItems = [
   {
-    "slug": "kk",
-    "categories": [
-      "category-web"
-    ],
-    "image": "/img/kc.png",
-    "alt": "",
-    "title": "Kotties Cleaning",
-    "categoryLabel": "Web Design"
-  },
-  {
     "slug": "scw",
     "categories": [
       "category-stack",
@@ -123,7 +113,7 @@ export const portfolioItems = [
     ],
     "image": "/img/romca-cover.png",
     "alt": "",
-    "title": "Russian Orthodox Male Choir of Australia Website",
+    "title": "Russian Orthodox Male Choir of Australia",
     "categoryLabel": "Web Design"
   },
   { ...f22FanpagePortfolioItem, categories: ['category-web', 'category-software'] },
@@ -137,6 +127,16 @@ export const portfolioItems = [
     "alt": "",
     "title": "MRI Annotator Tool",
     "categoryLabel": "Full-Stack Development"
+  },
+  {
+    "slug": "kk",
+    "categories": [
+      "category-web"
+    ],
+    "image": "/img/kc.png",
+    "alt": "Kotties Cleaning Logo",
+    "title": "Kotties Cleaning",
+    "categoryLabel": "Web Design"
   },
   {
     "slug": "mjo",
@@ -156,7 +156,7 @@ export const portfolioItems = [
     ],
     "image": "/img/amc-cover.png",
     "alt": "Australian Male Choir Cover",
-    "title": "Australian Male Choir Website",
+    "title": "Australian Male Choir",
     "categoryLabel": "Web Design"
   },
   {
