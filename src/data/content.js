@@ -104,7 +104,7 @@ export const stats = [
 
 export const about = {
   intro:
-    "Hi! I'm Peter I am a responsible and focused Computer Science and Engineering student with experience in software and web design.",
+    "Hi! I'm Peter I am a responsible and focused Computer Science and Aerospace Engineering student with experience in software and web design.",
   body:
     'My work ethic is paramount, and I believe in completing every task with precision and effort. I take pride in my attention to detail and commitment to meeting deadlines, ensuring that my contributions positively impact any team. Employers will find me a motivated and diligent individual, ready to tackle challenges and exceed expectations in software development.',
 };
