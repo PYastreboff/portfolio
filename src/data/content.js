@@ -32,10 +32,15 @@ export const accolades = [
 
 export const experience = [
   {
-    title: 'SWE Intern — Secure Code Warrior',
-    period: 'July 2026 — September 2026',
+    title: 'SWE Intern — Saber Astronautics',
+    period: 'November 2026 — April 2027',
     description:
-      'Software engineering internship focused on building and improving secure development tooling, contributing to production codebases, and collaborating with engineers in an agile product environment.',
+      'Engineered full-stack features for production space software in an agile environment while building secure development tooling to streamline CI/CD workflows.',  },
+  {
+    title: 'SWE Intern — Secure Code Warrior',
+    period: 'July 2026 — November 2026',
+    description:
+      'Software engineering internship focused on building and improving secure development tooling, contributing to production codebases, and collaborating with engineers in an agile product environment. Working throughout the whole stack.',
   },
   {
     title: 'Junior Developer — APTENT. DIGITAL',
