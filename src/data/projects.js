@@ -151,7 +151,7 @@ export const projects = [
       "url": "https://lsw-collector.vercel.app",
       "label": "lsw-collector.vercel.app"
     }
-  }
+  },
   {
     "slug": "mjo",
     "title": "Matt Jones - A Signpost Website for a Surgeon.",
