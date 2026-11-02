@@ -144,8 +144,7 @@ export const projects = [
     "date": "November, 2026",
     "paragraphs": [
       "LSW Collector is a streamlined web application designed to simplify data collection, tracking, and management. Built with efficiency in mind, the platform provides a clean, responsive interface that helps users organize and monitor information seamlessly.",
-      "The project focuses on delivering a fast, intuitive user experience with modern web technologies, ensuring smooth interactions and reliable performance for daily data-handling workflows.",
-      "https://lsw-collector.vercel.app"
+      "The project focuses on delivering a fast, intuitive user experience with modern web technologies, ensuring smooth interactions and reliable performance for daily data-handling workflows."
     ],
     "website": {
       "url": "https://lsw-collector.vercel.app",
