@@ -182,6 +182,17 @@ export const portfolioItems = [
     "categoryLabel": "Web Development"
   },
   {
+    "slug": "lsw",
+    "categories": [
+      "category-web",
+      "category-stack"
+    ],
+    "image": "/img/lsw-cover.png",
+    "alt": "Lego Star Wars Collector Logo",
+    "title": "LSW Collector",
+    "categoryLabel": "Full-Stack Development"
+  },
+  {
     "slug": "bd",
     "categories": [
       "category-graphics"
